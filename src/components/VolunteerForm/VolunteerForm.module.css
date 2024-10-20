@@ -1,41 +1,49 @@
-/* VolunteerForm.module.css */
 .volunteerForm {
-    padding: 20px;
-    background-color: #f0f8ff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .volunteerForm h2 {
-    font-size: 24px;
-    color: #003366;
-  }
-  
-  .volunteerForm label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
-  
-  .volunteerForm input,
-  .volunteerForm textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .volunteerForm button {
-    padding: 10px 15px;
-    background-color: #003366;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .volunteerForm button:hover {
-    background-color: #0055b3;
-  }
-  
+  padding: 20px;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.volunteerForm h2 {
+  font-size: 24px;
+  color: #003366;
+}
+
+.volunteerForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.volunteerForm input,
+.volunteerForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.volunteerForm button {
+  padding: 10px 15px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.volunteerForm button:hover {
+  background-color: #0055b3;
+}
+
+.confirmationMessage {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #d4edda; 
+  color: #155724; 
+  border: 1px solid #c3e6cb; 
+  border-radius: 4px;
+  transition: opacity 0.5s ease-in-out;
+}

@@ -38,9 +38,9 @@ const FormsContainer = () => {
     };
 
     const formsMap = {
-        volunteer: <VolunteerForm />,
-        donation: <DonationForm />,
-        partnership: <PartnershipForm />,
+        volunteer: <VolunteerForm onClose={handleCloseModal} />,
+        donation: <DonationForm onClose={handleCloseModal} />,
+        partnership: <PartnershipForm onClose={handleCloseModal} />,
     };
 
     return (

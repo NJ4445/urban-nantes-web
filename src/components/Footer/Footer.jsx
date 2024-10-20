@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faYoutube, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'; // Importation de l'icône YouTube
 import styles from './Footer.module.css';
 
 function Footer() {
@@ -30,16 +30,16 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.icons}>
-        <a href="mailto:joy.ndoumathe@example.com" aria-label="Email">
+        <a href="mailto:hiphopdenantes@example.com" aria-label="Email">
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
-        <a href="https://www.linkedin.com/in/joy-ndoumathe/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <FontAwesomeIcon icon={faLinkedin} />
+        <a href="https://www.youtube.com/@urbannantes" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <FontAwesomeIcon icon={faYoutube} /> 
         </a>
-        <a href="https://www.facebook.com/your-facebook-profile" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <a href="https://www.facebook.com/urbannantes/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
           <FontAwesomeIcon icon={faFacebook} />
         </a>
-        <a href="https://www.instagram.com/your-instagram-profile" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <a href="https://www.instagram.com/urban.nantes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <FontAwesomeIcon icon={faInstagram} />
         </a>
       </div>
