@@ -1,4 +1,11 @@
 /* App.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Empêche le débordement horizontal */
+  box-sizing: border-box; /* Assure que tous les éléments soient bien ajustés */
+}
+
 .App {
   text-align: center;
   background-color: #ffdd57;
@@ -36,5 +43,17 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Ajustements spécifiques pour les petits écrans */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin); /* Réduire la taille des polices sur mobile */
+    padding: 20px; /* Ajouter un peu de padding pour éviter les débordements */
+  }
+
+  .App-logo {
+    height: 30vmin; /* Taille plus petite du logo sur mobile */
   }
 }
