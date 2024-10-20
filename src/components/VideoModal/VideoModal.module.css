@@ -1,0 +1,51 @@
+/* VideoModal.module.css */
+.modalOverlay {
+    position: fixed;
+    top: 50rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    z-index: 1000; 
+  }
+  
+  .modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333; 
+  }
+  
+  .modalContent h2 {
+    color: #fdca1d; 
+    margin: 10px 0; 
+    text-align: center; 
+  }
+  
+  .modalContent iframe {
+    border: none; 
+    width: 100%; 
+    height: 315px; 
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+
+  

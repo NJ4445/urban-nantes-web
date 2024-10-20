@@ -1,0 +1,58 @@
+/* Home.module.css */
+.homeContainer {
+  text-align: center;
+  background-color: black;
+  padding: 40px 0;
+  transition: background-color 0.3s ease;
+}
+
+.sectionAngled {
+  border: 2px solid #fdca1d; 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  padding: 60px 20px;
+  margin: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sectionAngled:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
+}
+
+.svgSeparator {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.homeTitle {
+  color: #fdca1d; 
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.homeDescription {
+  color: #fdca1d; 
+  font-size: 22px;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Amélioration de la section */
+section {
+  margin: 40px 0;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease;
+}
+
+section:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  background-color: rgba(253, 202, 29, 0.2); 
+}

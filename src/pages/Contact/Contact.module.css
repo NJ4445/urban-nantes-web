@@ -1,0 +1,87 @@
+/* Contact.module.css */
+.contactContainer {
+  padding: 20px;
+  background-color: #fff8e1;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  margin: 40px auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contactContainer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contactTitle {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #555;
+  text-align: left;
+}
+
+.input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #ffdd57;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 221, 87, 0.5);
+}
+
+textarea {
+  min-height: 120px;
+}
+
+.submitButton {
+  padding: 14px 24px;
+  background-color: #ffdd57;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #f0c03b;
+  transform: translateY(-2px);
+}
+
+.confirmationMessage {
+  color: green;
+  background-color: #d4edda;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #c3e6cb;
+}

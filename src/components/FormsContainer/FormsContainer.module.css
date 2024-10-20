@@ -1,0 +1,126 @@
+/* FormsContainer.module.css */
+.action {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1e1e1e, #292929);
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .action h2 {
+    margin-bottom: 50px;
+    color: #ffdd57;
+    font-size: 2.3em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  /* Liste d'actions */
+  .actionList {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  /* Élément d'action */
+  .actionItem {
+    background: #fffbe0;
+    border: none;
+    border-radius: 16px;
+    padding: 40px 30px;
+    width: 300px;
+    margin: 20px;
+    text-align: left;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+  }
+  
+  .actionItem:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .actionItem h3 {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .actionItem p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Bouton */
+  .actionButton {
+    background: linear-gradient(135deg, #ffdd57, #f0c03b);
+    color: #1e1e1e;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.4s ease, transform 0.3s ease;
+    position: absolute;
+    bottom: 20px;
+  }
+  
+  .actionButton:hover {
+    background: linear-gradient(135deg, #f0c03b, #d1a62e);
+    transform: scale(1.1);
+  }
+  
+  .actionButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px rgba(253, 202, 29, 0.5);
+  }
+  
+  /* Modal animations */
+  .modalEnter {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  .modalExit {
+    animation: fadeOut 0.5s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+  }
+
+  /* Media query pour les petits écrans */
+@media (max-width: 768px) {
+    .action {
+      padding: 10px 10px; 
+    }
+  
+    .actionItem {
+      margin: 0px; 
+    }
+  }
+  

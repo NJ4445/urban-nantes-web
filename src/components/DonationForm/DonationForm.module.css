@@ -1,0 +1,41 @@
+/* DonationForm.module.css */
+.donationForm {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.donationForm h2 {
+  font-size: 24px;
+  color: #990000;
+}
+
+.donationForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.donationForm input,
+.donationForm select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.donationForm button {
+  padding: 10px 15px;
+  background-color: #990000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Ajout d'une transition */
+}
+
+.donationForm button:hover {
+  background-color: #cc0000;
+}

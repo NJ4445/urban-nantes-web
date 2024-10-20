@@ -1,0 +1,28 @@
+/* Error.module.css */
+.errorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f8d7da; 
+    color: #721c24; 
+  }
+  
+  .errorContainer h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .errorContainer p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .errorContainer a {
+    font-size: 1.25rem;
+    color: #0056b3; 
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,72 @@
+/* MissionSection.module.css */
+.mission {
+  padding: 40px;
+  text-align: center;
+  background: #fdca1d; 
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.title {
+  font-size: 2.5rem; 
+  color: #fff; 
+  margin-bottom: 20px; 
+  font-family: 'Poppins', sans-serif; 
+}
+
+.missionImage {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 12px;
+  border: 5px solid #fff; 
+  filter: grayscale(100%) brightness(90%); 
+}
+
+.description {
+  font-size: 1.3rem; 
+  color: black; 
+  margin: 20px 0; 
+  font-family: 'Poppins', sans-serif; 
+}
+
+.missionListContainer {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+}
+
+.missionList {
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
+}
+
+.missionList li {
+  background: rgba(255, 255, 255, 0.8); 
+  color: #333;
+  padding: 20px; 
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s, background-color 0.3s; 
+  position: relative; 
+}
+
+.missionList li:hover {
+  transform: translateY(-5px); 
+  background-color: #fdca1d; 
+  color: #fff; 
+}
+
+.missionList li::before {
+  content: ""; 
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.5rem; 
+  color: #fdca1d; 
+}

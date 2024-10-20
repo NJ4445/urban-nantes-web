@@ -1,0 +1,30 @@
+/* Header.module.css*/
+.header {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.bannerImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.8s ease-in-out;
+}
+
+.bannerImage:hover {
+  transform: scale(1.05); /* Zoom léger au survol */
+  filter: brightness(0.9); /* Réduction légère de la luminosité */
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.header {
+  animation: fadeIn 1s ease-in-out;
+}

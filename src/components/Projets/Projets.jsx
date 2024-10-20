@@ -1,0 +1,55 @@
+import React, { useEffect, useState } from 'react';  
+import styles from './Projets.module.css';
+import frapImage from '../../assets/images/frap-project-image.webp';  
+import VideoModal from '../VideoModal/VideoModal';
+
+const Projets = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleClose = () => {
+    setIsModalOpen(false);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const element = document.getElementById('projets-section');
+      const rect = element.getBoundingClientRect();
+      const isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
+      
+      if (isInViewport) {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <section id="projets-section" className={`${styles.fadeInSection} ${isVisible ? styles.active : ''}`}>
+      <h2 className={styles.projetsTitle}>Notre Projet</h2>
+      <img
+        src={frapImage}  
+        alt="Projet LA FRAP'"
+        className={styles.frapImage}
+      />
+      <p className={styles.introText}>
+        Plongez dans l'univers de <strong>LA FRAP'</strong>, une initiative innovante qui célèbre l'art urbain et la culture à Nantes. <br />
+        Découvrez nos projets, rejoignez-nous en tant que bénévole, ou faites un don pour soutenir notre mission.
+      </p>
+      <button onClick={handleClick} className={styles.frapButton}>
+        En savoir plus sur <strong>LA FRAP'</strong>
+      </button>
+      <VideoModal isOpen={isModalOpen} onClose={handleClose} />
+    </section>
+  );
+};
+
+export default Projets;
