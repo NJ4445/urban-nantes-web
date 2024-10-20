@@ -40,11 +40,6 @@
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Ajout pour s'assurer que le texte "LA FRAP'" soit noir */
-.frapButton strong {
-  color: black; /* Définit la couleur du texte <strong> en noir */
-}
-
 .frapButton:hover {
   background-color: #f39c12; 
   transform: translateY(-5px) scale(1.05); /* Effet de pulsation */
@@ -59,6 +54,10 @@
 
 .fadeInSection.active {
   opacity: 1;
+}
+
+.frapButton strong {
+  color: black !important; /* Force la couleur noire */
 }
 
 /* Pour des petits écrans */
