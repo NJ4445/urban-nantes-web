@@ -11,7 +11,7 @@ const NavBar = () => {
     };
 
     const handleLinkClick = () => {
-        setIsOpen(false); // Fermer le menu lorsque l'utilisateur clique sur un lien
+        setIsOpen(false); 
     };
 
     return (

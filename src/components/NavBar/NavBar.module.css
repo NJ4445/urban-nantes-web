@@ -1,4 +1,3 @@
-/* NavBar.module.css */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -28,7 +27,7 @@
   display: flex;
   margin: 0;
   padding: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Transition ajoutée */
 }
 
 .navItem {
@@ -39,7 +38,7 @@
   color: white;
   text-decoration: none;
   font-size: 18px;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease; /* Transition ajoutée pour les liens */
   position: relative;
 }
 
@@ -95,33 +94,33 @@
 /* Responsive */
 @media (max-width: 768px) {
   .navList {
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    width: 100%;
-    height: 100vh;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in-out;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 100%;
+      height: 100vh;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in-out;
   }
 
   .navListOpen {
-    transform: translateX(0);
+      transform: translateX(0);
   }
 
   .menuToggle {
-    display: flex;
+      display: flex;
   }
 
   .navItem {
-    margin: 20px 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+      margin: 20px 0;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
   }
 
   .navListOpen .navItem {
-    opacity: 1;
-    transition-delay: 0.2s;
+      opacity: 1;
+      transition-delay: 0.2s;
   }
 }
