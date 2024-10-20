@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';  
 import styles from './Projets.module.css';
 import frapImage from '../../assets/images/frap-project-image.webp';  
-import VideoModal from '../VideoModal/VideoModal';
+import VideoModal from '../../components/VideoModal/VideoModal';
 
 const Projets = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,8 +21,11 @@ const Projets = () => {
       const rect = element.getBoundingClientRect();
       const isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
       
+      // Activez immédiatement la visibilité de la section lorsque l'élément est dans le viewport
       if (isInViewport) {
         setIsVisible(true);
+        // Supprimez l'écouteur de scroll si la section est visible
+        window.removeEventListener('scroll', handleScroll);
       }
     };
 

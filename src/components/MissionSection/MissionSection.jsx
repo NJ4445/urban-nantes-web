@@ -12,9 +12,9 @@ const MissionSection = () => {
       </p>
       <div className={styles.missionListContainer}>
         <ul className={styles.missionList}>
-          <li>🎨 Promouvoir l’art urbain dans les quartiers de Nantes.</li>
-          <li>🧑‍🎤 Donner aux jeunes artistes locaux une plateforme pour s'exprimer.</li>
-          <li>🏙️ Transformer les espaces publics en galeries à ciel ouvert.</li>
+          <li> Promouvoir l’art urbain dans les quartiers de Nantes.</li>
+          <li> Donner aux jeunes artistes locaux une plateforme pour s'exprimer.</li>
+          <li> Transformer les espaces publics en galeries à ciel ouvert.</li>
         </ul>
       </div>
     </section>

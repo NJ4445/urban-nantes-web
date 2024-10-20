@@ -3,12 +3,15 @@ import { motion } from 'framer-motion';
 import styles from './Home.module.css';
 import Banner from '../../components/Banner/Banner';
 import About from '../About/About';
-import Actions from '../Actions/Actions';
-import Projets from '../../components/Projets/Projets';
+import Actions from '../../components/Actions/Actions';
+import Projets from '../Projets/Projets';
 import MissionSection from '../../components/MissionSection/MissionSection';
 import FormsContainer from '../../components/FormsContainer/FormsContainer';
 
 const Home = () => {
+  // Tableau des couleurs pour les séparateurs
+  const separatorColors = ['#fdca1d', '#909c98']; // Couleurs alternées
+
   return (
     <div className={styles.homeContainer}>
       <motion.div
@@ -18,10 +21,6 @@ const Home = () => {
       >
         <Banner />
       </motion.div>
-
-      <svg className={styles.svgSeparator} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#fdca1d" d="M0,320L1440,160L1440,320L0,320Z"></path>
-      </svg>
 
       {/* Projets */}
       <motion.div
@@ -33,8 +32,9 @@ const Home = () => {
         <Projets />
       </motion.div>
 
+      {/* Séparateur avec couleur alternée */}
       <svg className={styles.svgSeparator} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#222" d="M0,0L1440,160L1440,0L0,0Z"></path>
+        <path fill={separatorColors[0]} d="M0,320L1440,160L1440,320L0,320Z"></path>
       </svg>
 
       {/* Actions */}
@@ -47,8 +47,9 @@ const Home = () => {
         <Actions />
       </motion.div>
 
+      {/* Séparateur avec couleur alternée */}
       <svg className={styles.svgSeparator} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#fdca1d" d="M0,320L1440,160L1440,320L0,320Z"></path>
+        <path fill={separatorColors[1]} d="M0,0L1440,160L1440,0L0,0Z"></path>
       </svg>
 
       {/* MissionSection */}
@@ -61,8 +62,9 @@ const Home = () => {
         <MissionSection />
       </motion.div>
 
+      {/* Séparateur avec couleur alternée */}
       <svg className={styles.svgSeparator} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#222" d="M0,0L1440,160L1440,0L0,0Z"></path>
+        <path fill={separatorColors[0]} d="M0,0L1440,160L1440,0L0,0Z"></path>
       </svg>
 
       {/* About */}
@@ -75,8 +77,9 @@ const Home = () => {
         <About />
       </motion.div>
 
+      {/* Séparateur avec couleur alternée */}
       <svg className={styles.svgSeparator} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#fdca1d" d="M0,320L1440,160L1440,320L0,320Z"></path>
+        <path fill={separatorColors[1]} d="M0,320L1440,160L1440,320L0,320Z"></path>
       </svg>
 
       {/* FormsContainer */}

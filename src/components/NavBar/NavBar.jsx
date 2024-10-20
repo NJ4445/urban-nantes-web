@@ -27,8 +27,8 @@ const NavBar = () => {
                 <span className={isOpen ? styles.barOpen3 : styles.bar}></span>
             </div>
             <ul className={`${styles.navList} ${isOpen ? styles.navListOpen : ''}`}>
-                {['/', '/about', '/actions', '/contact'].map((path, index) => {
-                    const linkText = ['Accueil', 'À propos', 'Nos Actions', 'Contact'][index];
+                {['/', '/Projets', '/about', '/contact'].map((path, index) => {
+                    const linkText = ['Accueil', 'Notre projet', 'À propos', 'Contact'][index];
                     return (
                         <li key={index} className={styles.navItem}>
                             <Link to={path} className={styles.navLink} onClick={handleLinkClick}>
