@@ -40,8 +40,43 @@
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Ajout pour s'assurer que le texte "LA FRAP'" soit noir */
+.frapButton strong {
+  color: black; /* Définit la couleur du texte <strong> en noir */
+}
+
 .frapButton:hover {
   background-color: #f39c12; 
   transform: translateY(-5px) scale(1.05); /* Effet de pulsation */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Animation de fade-in lorsque l'élément entre dans le viewport */
+.fadeInSection {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.fadeInSection.active {
+  opacity: 1;
+}
+
+/* Pour des petits écrans */
+@media (max-width: 768px) {
+  #projets-section {
+    padding: 30px 10px;
+  }
+
+  .projetsTitle {
+    font-size: 28px;
+  }
+
+  .introText {
+    font-size: 16px;
+  }
+
+  .frapButton {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
 }
